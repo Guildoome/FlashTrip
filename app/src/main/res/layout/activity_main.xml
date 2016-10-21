@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:id="@+id/principal"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:src="@drawable/flash"
+        android:id="@+id/flashlogo"
+        android:contentDescription="@string/description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/secondaire">
+
+        <Button
+            android:id="@+id/flasher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flasher"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/buttonshape"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/proximite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_proximite"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/buttonshape"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+</LinearLayout>
+
+
+
+
