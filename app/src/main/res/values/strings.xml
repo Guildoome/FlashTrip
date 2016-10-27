@@ -5,4 +5,6 @@
     <string name="a_proximite">Autour de moi</string>
     <string name="flasher">Flasher</string>
     <string name="title_activity_maps">Map</string>
+    <string name="retour">Retour</string>
+    <string name="allez">Y aller</string>
 </resources>

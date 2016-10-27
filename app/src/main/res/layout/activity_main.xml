@@ -12,6 +12,7 @@
         android:layout_height="91dp"
         android:src="@drawable/flash"
         android:id="@+id/flashlogo"
+        android:layout_marginBottom="20dp"
         android:contentDescription="@string/description"/>
 
     <LinearLayout
@@ -19,7 +20,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:id="@+id/secondaire">
+        android:id="@+id/secondaire"
+        android:layout_marginBottom="50dp">
 
         <Button
             android:id="@+id/flasher"
