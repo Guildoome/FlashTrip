@@ -22,6 +22,8 @@ public class Description extends AppCompatActivity {
 //set content view AFTER ABOVE sequence (to avoid crash)
         this.setContentView(R.layout.activity_description);
 
+
+
         ((Button)findViewById(R.id.retour))
                 .setOnClickListener(new View.OnClickListener()
                     {

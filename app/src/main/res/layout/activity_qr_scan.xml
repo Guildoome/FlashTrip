@@ -40,13 +40,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/click_share"
         android:src="@drawable/share"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.5"
+        android:contentDescription="Partager" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/click_ok"
             android:src="@drawable/ok"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:contentDescription="Retour"/>
     </LinearLayout>
 
 
