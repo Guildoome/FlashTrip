@@ -33,6 +33,18 @@
         <activity android:name=".QrScan"
             android:theme="@style/FullscreenTheme">
         </activity>
+        <activity android:name=".Accueil"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity android:name=".Resto"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity android:name=".Dl"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity android:name=".Cdi"
+            android:theme="@style/FullscreenTheme">
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

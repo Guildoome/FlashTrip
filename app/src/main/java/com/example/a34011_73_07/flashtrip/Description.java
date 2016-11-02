@@ -1,5 +1,6 @@
 package com.example.a34011_73_07.flashtrip;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,14 +25,5 @@ public class Description extends AppCompatActivity {
 
 
 
-        ((Button)findViewById(R.id.retour))
-                .setOnClickListener(new View.OnClickListener()
-                    {
-                        public void onClick(View v)
-                        {
-                            Description.this.finish();
-                        }
-                    }
-                );
     }
 }

@@ -98,9 +98,33 @@ public class MainActivity extends Activity {
                                 childPosition), Toast.LENGTH_SHORT)
                         .show();
 
+                final String selected = (String) listAdapter.getChild(
+                        groupPosition, childPosition);
+               /* Intent i = new Intent(MainActivity.this, Description.class);
+                startActivity(i);*/
+                Intent intent;
+                switch(selected){
+                    case "Accueil":
+                        intent = new Intent(MainActivity.this, Accueil.class);
+                        startActivity(intent);
+                        break;
 
-                Intent i = new Intent(MainActivity.this, Description.class);
-                startActivity(i);
+                    case "Restaurant":
+                        intent = new Intent(MainActivity.this, Resto.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Développement logiciel":
+                        intent = new Intent(MainActivity.this, Dl.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Concepteur développeur informatique":
+                        intent = new Intent(MainActivity.this, Cdi.class);
+                        startActivity(intent);
+                        break;
+
+                }
                 return false;
 
             }

@@ -17,7 +17,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/texteDesc"
+        android:id="@+id/textetitre"
+        android:layout_weight="0.5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/textedesc"
         android:layout_weight="0.5"/>
     <LinearLayout
         android:layout_width="match_parent"
