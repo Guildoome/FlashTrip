@@ -27,18 +27,7 @@ public class Resto extends Activity {
         description = (TextView) findViewById(R.id.textedesc);
 
         titre.setText("Restaurant");
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-            description.setText(Html.fromHtml("",Html.FROM_HTML_MODE_LEGACY));
-        } else {
-
-            description.setText(Html.fromHtml("<h2>Horaires</h2>\n" +
-                    "<ul>\n" +
-                    "<li>12h-14h</li>\n" +
-                    "</ul>\n" +
-                    "\n" +
-                    "Téléphone : 00.00.00.00.00<br/>\n" +
-                    "Mail : a@b.com"));
-        }
+        description.setText("Vous trouverez le Qr code sur la porte d'entrée");
 
         photo.setImageResource(R.mipmap.restaurant);
         final ImageView click_retour = (ImageView) findViewById(R.id.click_retour);

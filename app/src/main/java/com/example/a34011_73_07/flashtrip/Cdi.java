@@ -27,12 +27,7 @@ public class Cdi extends Activity {
         description = (TextView) findViewById(R.id.textedesc);
 
         titre.setText("Concepteurs développeurs informatique");
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-            description.setText(Html.fromHtml("",Html.FROM_HTML_MODE_LEGACY));
-        } else {
-
-            description.setText("Salle de formation des Concepteurs développeurs informatique");
-        }
+        description.setText("Vous trouverez le Qr code sur la porte d'entrée");
 
         photo.setImageResource(R.mipmap.accueilphoto);
         final ImageView click_retour = (ImageView) findViewById(R.id.click_retour);

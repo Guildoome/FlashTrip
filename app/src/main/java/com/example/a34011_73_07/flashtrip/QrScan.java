@@ -79,8 +79,10 @@ public class QrScan extends AppCompatActivity implements ZXingScannerView.Result
         final ImageView click_ok = (ImageView) dialog.findViewById(R.id.click_ok);
         final ImageView click_share = (ImageView) dialog.findViewById(R.id.click_share);
 
-        final TextView qrResult = (TextView) dialog.findViewById(R.id.textQr);
-        qrResult.setText(shareResult);
+        final WebView qrResult = (WebView) dialog.findViewById(R.id.textQr);
+        qrResult.setBackgroundColor(Color.TRANSPARENT);
+        qrResult.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+        qrResult.loadDataWithBaseURL(null, shareResult, "text/html", "utf-8", null);
 
         click_ok.setOnClickListener(new View.OnClickListener() {
 
