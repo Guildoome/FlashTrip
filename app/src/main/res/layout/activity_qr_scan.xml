@@ -11,7 +11,7 @@
     android:background="@drawable/back"
     android:orientation="vertical"
     tools:context="com.example.a34011_73_07.flashtrip.QrScan">
-    <Button
+   <!-- <Button
         android:id="@+id/flash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,11 +20,34 @@
         android:textSize="14sp"
         android:background="@drawable/buttonshape"
         android:onClick="onClick"
-        />
-    <WebView
+        /> -->
+    <TextView
+        android:id="@+id/textQr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webFlash">
+        android:gravity="center"
+        android:layout_weight="0.9"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        >
 
-    </WebView>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/click_share"
+        android:src="@drawable/share"
+        android:layout_weight="0.5"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/click_ok"
+            android:src="@drawable/ok"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+
 </LinearLayout>
