@@ -34,7 +34,7 @@ public class Accueil extends Activity{
 
             description.setText(Html.fromHtml("<h2>Horaires</h2>\n" +
                     "<ul>\n" +
-                    "<li>9h-12h</li>\n" +
+                    "<li>9h-12h</li><br/>" +
                     "<li>13h-17h</li>\n" +
                     "</ul>\n" +
                     "\n" +

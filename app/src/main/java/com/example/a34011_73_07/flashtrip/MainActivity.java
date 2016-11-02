@@ -44,6 +44,16 @@ public class MainActivity extends Activity {
                                         }
                                     }
                 );
+        ((Button)findViewById(R.id.proximite))
+                .setOnClickListener(new View.OnClickListener()
+                                    {
+                                        public void onClick(View v)
+                                        {
+                                            Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                                            startActivity(i);
+                                        }
+                                    }
+                );
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
