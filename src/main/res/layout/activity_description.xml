@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a34011_73_07.flashtrip.Description"
+    android:background="@drawable/back">
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.9">
+
+</WebView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/retour"
+            android:background="@drawable/buttonshapered"
+            android:layout_weight="0.5"
+            android:id="@+id/retour"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/allez"
+            android:background="@drawable/buttonshape"
+            android:layout_weight="0.5"
+            android:id="@+id/allez"
+            />
+
+    </LinearLayout>
+</LinearLayout>
