@@ -8,4 +8,23 @@
     <string name="retour">Retour</string>
     <string name="allez">Y aller</string>
 
+    <string name="title_activity_welcome">Flashtrip</string>
+    <string name="next">Suivant</string>
+    <string name="skip">Annuler</string>
+    <string name="start">Compris</string>
+
+    <string name="slide_1_title">Facilitez vos visites</string>
+    <string name="slide_1_desc">Le meilleur moyen pour découvrir autrement !</string>
+
+    <string name="slide_2_title">Partagez</string>
+    <string name="slide_2_desc">Partagez vous visites avec vos amis!</string>
+
+    <string name="slide_3_title">Perdu ?</string>
+    <string name="slide_3_desc">Ne vous perdez plus et allez directement là ou vous voulez!</string>
+
+    <string name="slide_4_title">Des infos</string>
+    <string name="slide_4_desc">Vérifier les horaires d\'ouvertures et plus encore !</string>
+
+    <string name="play_again_desc">Pour revoir le slider, allez dans Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Rejouer</string>
 </resources>
