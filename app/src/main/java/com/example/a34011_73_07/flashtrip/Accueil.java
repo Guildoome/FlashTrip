@@ -68,11 +68,10 @@ public class Accueil extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent sendIntent = new Intent();
-
-                startActivity(sendIntent);
-
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=43.564946, 3.844630&mode=w");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
             }
         });
         final ImageView click_telephoner = (ImageView) findViewById(R.id.telephoner);

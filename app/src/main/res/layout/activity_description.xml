@@ -54,7 +54,7 @@
             android:id="@+id/telephoner"
             android:src="@drawable/telephone"
             android:layout_weight="0.5"
-            android:contentDescription="Y aller"/>
+            android:contentDescription="Téléphoner"/>
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"

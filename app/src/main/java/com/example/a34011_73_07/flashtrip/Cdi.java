@@ -64,11 +64,10 @@ public class Cdi extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent sendIntent = new Intent();
-
-                startActivity(sendIntent);
-
+                Uri gmmIntentUri = Uri.parse("google.navigation:q=43.565562, 3.845125&mode=w");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
             }
         });
         click_telephoner.setOnClickListener(new View.OnClickListener() {
