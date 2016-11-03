@@ -1,8 +1,11 @@
 package com.example.a34011_73_07.flashtrip;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
@@ -54,6 +57,17 @@ public class Accueil extends Activity{
 
                 startActivity(sendIntent);
 
+            }
+        });
+        final ImageView click_telephoner = (ImageView) findViewById(R.id.telephoner);
+
+        click_telephoner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "0467690331"));
+                int permissionCheck = ContextCompat.checkSelfPermission(Accueil.this,
+                        Manifest.permission.CALL_PHONE);
+                startActivity(intent);
             }
         });
     }
