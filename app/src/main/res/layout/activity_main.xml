@@ -10,10 +10,18 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="91dp"
-        android:src="@drawable/flash"
+        android:src="@drawable/icoflash"
         android:id="@+id/flashlogo"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/description"/>
+
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,35 +29,33 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:id="@+id/secondaire"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="0dp">
 
         <Button
             android:id="@+id/flasher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/flasher"
+            android:layout_height="match_parent"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/flash"
             android:layout_weight="1"
-            />
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
 
         <Button
             android:id="@+id/proximite"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/a_proximite"
+            android:layout_height="match_parent"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/aroundme"
             android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
             />
     </LinearLayout>
 
-    <ExpandableListView
-        android:id="@+id/lvExp"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+
 </LinearLayout>
 
 
